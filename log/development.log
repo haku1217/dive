@@ -2268,3 +2268,260 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:23:12 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (309.6ms)
+Completed 200 OK in 419ms (Views: 394.2ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/blogs/4/edit" for 127.0.0.1 at 2018-12-11 13:24:44 +0900
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlog Load (1.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (43.4ms)
+  Rendered blogs/edit.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 160ms (Views: 107.1ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/blogs/4" for 127.0.0.1 at 2018-12-11 13:24:45 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Blog Load (0.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 62.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-11 13:24:50 +0900
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (7.8ms)
+  Rendered blogs/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 82ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:24:52 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (3.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 128ms (Views: 118.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:24:54 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 73ms (Views: 69.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:24:54 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 80ms (Views: 73.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:24:55 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 77ms (Views: 70.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:24:55 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:35:25 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 13:35:32 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-11 14:01:18 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (2.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 177ms (Views: 133.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-13 15:51:49 +0900
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/user/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/user/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 26ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-13 15:51:56 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (6.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (317.3ms)
+Completed 200 OK in 382ms (Views: 332.1ms | ActiveRecord: 38.5ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-13 16:23:08 +0900
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (48.9ms)
+  Rendered blogs/new.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 116ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 127.0.0.1 at 2018-12-13 16:23:14 +0900
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MNDUAdTA1kr7y2JpH5XC3tcWh/d5EF3J+FTDABHfoXsWaoWzxuWhT9A558ighvkyk6axdlZhuTcO3IjeCB9mWw==", "blog"=>{"title"=>"aaaa", "content"=>"aaa"}, "commit"=>"Create Blog"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-13 16:23:17 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pat3jpe5NK9Bt1VnZXZLjCGVQbQJcfnv0fzs3M7gmgBEV2kK+4WVmf+22VaElDXq7gYw6+kWrH3Me4sBqnm3Nw==", "blog"=>{"title"=>"aaaa", "content"=>"aaa"}, "commit"=>"登録する"}
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "content", "created_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "aaaa"], ["content", "aaa"], ["created_at", "2018-12-13 07:23:17.051172"]]
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 24ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-13 16:23:17 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 14:57:14 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (14.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (128.3ms)
+Completed 200 OK in 323ms (Views: 282.3ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 14:57:21 +0900
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (37.1ms)
+  Rendered blogs/new.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 160ms (Views: 153.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 127.0.0.1 at 2018-12-14 14:57:29 +0900
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9H0dsiiEP6LI5rv2CciEOtxnNkOSo/W80NNmL3+Oo4rSx0wAOqFIp+MUPle227/WmNcAwr3SEUImWy3xZk5kqg==", "blog"=>{"title"=>"lじょjっhgdfg", "content"=>"hjhg"}, "commit"=>"Create Blog"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 96ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-14 14:57:32 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"op8mUzQb5WiOMBsjAlAaXct5CZV/n8guBgULNLx2Ad5DYzjXWCdEXjAxlxLjsmQ7BOp4yp/4nbwbgmzp2O8s6Q==", "blog"=>{"title"=>"lじょjっhgdfg", "content"=>"hjhg"}, "commit"=>"登録する"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (10.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "content", "created_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "lじょjっhgdfg"], ["content", "hjhg"], ["created_at", "2018-12-14 05:57:32.349663"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 25ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 14:57:32 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (5.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 58ms (Views: 51.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/blogs/confirm" for 127.0.0.1 at 2018-12-14 14:57:34 +0900
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"confirm"}
+  [1m[36mBlog Load (5.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 31ms (ActiveRecord: 6.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Blog with 'id'=confirm:
+  app/controllers/blogs_controller.rb:59:in `set_blog'
+
+Started POST "/__better_errors/6407bff6a25fe026/variables" for 127.0.0.1 at 2018-12-14 14:57:34 +0900
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 14:57:40 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 72ms (Views: 67.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 22:23:01 +0900
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (53.3ms)
+  Rendered blogs/new.html.erb within layouts/application (74.2ms)
+Completed 200 OK in 320ms (Views: 295.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 127.0.0.1 at 2018-12-14 22:23:06 +0900
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eGQCrGCZ4WRwIFlc26rVScRFL5XusTaL69OndGkHM/Be3lMecryWYVvS3P1kue6lgPUZFMHA0nUdW+yqcMf00A==", "blog"=>{"title"=>"w", "content"=>""}, "commit"=>"Create Blog"}
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (5.8ms)
+  Rendered blogs/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 65ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs/confirm" for 127.0.0.1 at 2018-12-14 22:23:10 +0900
+Processing by BlogsController#confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"knQtZvCbN4TRnqz3xcbo0lIoEisIVRGBwx1CjBs8quVziDPinKeWsm+fIMYkJJa0nbtjdOgyRBPemiVRf6WH0g==", "blog"=>{"title"=>"w", "content"=>"あ"}, "commit"=>"Create Blog"}
+  Rendering blogs/confirm.html.erb within layouts/application
+  Rendered blogs/confirm.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-14 22:23:11 +0900
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4sIOjxv728m4RHTtwHqkDbGeXr39lc4yULJeyLFbNwQDPhALd8d6/wZF+NwhmNprfg0v4h3ym6BNNTkV1cIaMw==", "blog"=>{"title"=>"w", "content"=>"あ"}, "commit"=>"登録する"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.7ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "content", "created_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "w"], ["content", "あ"], ["created_at", "2018-12-14 13:23:11.849933"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 43ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 22:23:11 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 1.4ms)
+
+
