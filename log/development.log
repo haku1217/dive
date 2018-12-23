@@ -2525,3 +2525,259 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 44ms (Views: 40.6ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-12-20 11:11:48 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/user/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/user/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 23ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-20 11:11:57 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (12.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (494.2ms)
+Completed 200 OK in 569ms (Views: 505.5ms | ActiveRecord: 55.2ms)
+
+
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7395633852180811650)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBlogs (20181223141300)
+  [1m[35m (4.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (41.3ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" bigserial primary key, "title" character varying, "content" text, "created_at" timestamp)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7395633852180811650)[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-23 23:19:34 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/223329d785a8385d/variables" for 127.0.0.1 at 2018-12-23 23:19:35 +0900
+Started GET "/blog/new" for 127.0.0.1 at 2018-12-23 23:19:44 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/cdbf4439c84e790e/variables" for 127.0.0.1 at 2018-12-23 23:19:44 +0900
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:22:54 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/5d295b13fa1b65d3/variables" for 127.0.0.1 at 2018-12-23 23:22:54 +0900
+Started GET "/" for 127.0.0.1 at 2018-12-23 23:23:17 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/231726094528dd3a/variables" for 127.0.0.1 at 2018-12-23 23:23:18 +0900
+Started GET "/blogs" for 127.0.0.1 at 2018-12-23 23:23:27 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/363ce270ce7ae67f/variables" for 127.0.0.1 at 2018-12-23 23:23:28 +0900
+Started GET "/blogs" for 127.0.0.1 at 2018-12-23 23:24:26 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/c4e3dd4102c11413/variables" for 127.0.0.1 at 2018-12-23 23:24:27 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blogs%EF%BF%A5" for 127.0.0.1 at 2018-12-23 23:26:11 +0900
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/1e757820e3c81099/variables" for 127.0.0.1 at 2018-12-23 23:26:11 +0900
+Started POST "/__better_errors/1e757820e3c81099/variables" for 127.0.0.1 at 2018-12-23 23:26:17 +0900
+Started POST "/__better_errors/c4e3dd4102c11413/variables" for 127.0.0.1 at 2018-12-23 23:26:18 +0900
+Started GET "/blogs" for 127.0.0.1 at 2018-12-23 23:26:20 +0900
+  [1m[35m (8.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/74486464b893ab00/variables" for 127.0.0.1 at 2018-12-23 23:26:20 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7395633852180811650)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7395633852180811650)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blogs" for 127.0.0.1 at 2018-12-23 23:39:31 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (366.1ms)
+Completed 200 OK in 473ms (Views: 440.6ms | ActiveRecord: 6.6ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blogs" for 127.0.0.1 at 2018-12-23 23:44:38 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/6c145758471528c6/variables" for 127.0.0.1 at 2018-12-23 23:44:38 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7395633852180811650)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Tmp (20181129194045)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7395633852180811650)[0m
+Started GET "/blogs" for 127.0.0.1 at 2018-12-23 23:52:36 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 73ms (Views: 67.8ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blog/new" for 127.0.0.1 at 2018-12-23 23:57:47 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/blog/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/blog/" for 127.0.0.1 at 2018-12-23 23:57:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-23 23:58:30 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 82ms (Views: 77.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-23 23:58:35 +0900
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (21.1ms)
+  Rendered blogs/new.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 73ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
