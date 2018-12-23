@@ -2781,3 +2781,11 @@ Processing by BlogsController#new as HTML
 Completed 200 OK in 73ms (Views: 68.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-24 00:31:18 +0900
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (15.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (228.9ms)
+Completed 200 OK in 316ms (Views: 274.6ms | ActiveRecord: 15.1ms)
+
+
