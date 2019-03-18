@@ -1,4 +1,6 @@
 class BlogsController < ApplicationController
+
+  before_action :require_sign_in!, only: [:new, :edit, :show, :destroy]
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
   def index
